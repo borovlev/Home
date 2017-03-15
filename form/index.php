@@ -110,7 +110,7 @@ if (isRequestPost()) {
     if (isFormValid()) {
         $message = createMessage(requestPost('username'), requestPost('email'), requestPost('message'));
         saveMessage($message);
-        redirect("http://localhost/todo/form/"); //get ok Style and message
+        redirect("../form/"); //get ok Style and message
     } else
 	{
     
@@ -130,7 +130,7 @@ $messages = loadMessages();
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <style> <!-- добавлены стили в зависимости от переданного сообщения -->
+    <style> /* добавлены стили в зависимости от переданного сообщения */
 	.ok {
     border-style: solid; 
 	border-color: green;
